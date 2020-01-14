@@ -56,13 +56,13 @@ body {
 .btn{
     display: inline-block;
     border:none;
-    background:#555;
+    background:#D54E21;
     color:#fff;
     padding: 7px 20px;
     cursor:pointer;
 }
 .btn:hover {
-  background : #666;
+  background : rgb(213, 111, 33);
 }
 
 
