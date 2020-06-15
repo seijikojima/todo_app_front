@@ -2,44 +2,20 @@
 <template>
 
   <div id="app">
-    <Header />
-    <AddTodo v-on:add-todo="addTodo" />
-    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
+    <!-- <Header /> -->
+    <Todos />
     
   </div>
 </template>
 
 <script>
-import Header from './components/Header';
 import Todos from './components/Todos';
-import AddTodo from './components/AddTodo';
-
 
 export default {
   name: 'app',
   components: {
-    Header,
     Todos,
-    AddTodo,
   },
-  data(){
-    return {
-      todos : [
-        {id : 1, title: "ml application",completed : false},
-        {id : 2, title: "sumarize experimental result app",completed : false},
-        {id : 3, title: "preparing something",completed : false},
-      ]
-    }
-  },
-  methods: {
-    deleteTodo(id){
-      this.todos = this.todos.filter(todo => todo.id !== id);
-    },
-    addTodo(newTodo) {
-      this.todos = [...this.todos,newTodo]; // append last todos
-      this.title = '';
-    }
-  }
 }
 </script>
 
