@@ -96,7 +96,7 @@ export default {
     padding : 5px;
     /* border : solid 1px #ddd; */
     border-radius : 5px;
-    width : 50%;
+    width : 90%;
 }
 
 .submit_button{
@@ -116,7 +116,7 @@ export default {
     padding : 5px;
     border : solid 1px #ddd;
     border-radius : 5px;
-    width : 50%;
+    width : 90%;
 }
 
 .done_lists{
@@ -124,7 +124,7 @@ export default {
     padding : 5px;
     border : solid 1px #ddd;
     border-radius : 5px;
-    width : 50%;
+    width : 90%;
 }
 
 .done_button{
